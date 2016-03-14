@@ -1,0 +1,11 @@
+{
+	"version": 0,
+	"dependencies": [
+		{
+			"importpath": "github.com/robfig/cron",
+			"repository": "https://github.com/robfig/cron",
+			"revision": "32d9c273155a0506d27cf73dd1246e86a470997e",
+			"branch": "master"
+		}
+	]
+}
