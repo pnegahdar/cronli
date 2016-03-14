@@ -27,7 +27,8 @@ func main() {
 	fmt.Println("Command:", strings.Join(command, " "))
 	firstRuns := []string{}
 	next := time.Now().Local()
-	for i := 0; i < 6; i++ {
+	fmt.Println("Current time:", next.String())
+	for i := 0; i < 5; i++ {
 		next = c.Entries()[0].Schedule.Next(next)
 		firstRuns = append(firstRuns, next.String())
 	}
@@ -35,6 +36,5 @@ func main() {
 	fmt.Println("Started.")
 	fmt.Println("********")
 	c.Start()
-	for {
-	}
+	select {}
 }

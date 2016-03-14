@@ -4,16 +4,14 @@ Lets you run crons with second granularity as a standard cli proc
 
 Very light wrapper around: https://github.com/robfig/cron
 
-Installation:
+#### Installation:
 
 Grab the right precompiled bin from github releases and put it in your path. Don't forget to `chmod +x` the bin.
-
-For example:
 
     curl -SL https://github.com/pnegahdar/cronli/releases/download/0.1.0/cronli_0.1.0_darwin_amd64.tar.gz \
         | tar -xzC /usr/local/bin --strip 1 && chmod +x /usr/local/bin/cronli
 
-Usage:
+#### Usage:
 
     cronli "* * * * *" "echo hello"
 
